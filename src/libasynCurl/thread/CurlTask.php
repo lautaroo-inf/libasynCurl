@@ -23,7 +23,7 @@ abstract class CurlTask extends AsyncTask
     /** @var string */
     protected string $headers;
 
-    public function __construct(string $page, int $timeout, array $headers, Closure $closure = null)
+    public function __construct(string $page, int $timeout, array $headers, ?Closure $closure = null)
     {
         $this->page = $page;
         $this->timeout = $timeout;

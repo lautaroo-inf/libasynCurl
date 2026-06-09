@@ -1,0 +1,5 @@
+name: libasynCurl
+author: NetherGames
+antigen: libasynCurl
+version: 1.0.0
+api: 5.0.0

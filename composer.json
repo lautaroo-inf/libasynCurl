@@ -3,17 +3,26 @@
   "description": "An async Curl library for PocketMine-MP",
   "license": "proprietary",
   "type": "project",
+  "repositories": [
+    {
+      "url": "https://github.com/NetherGamesMC/PocketMine-MP.git",
+      "type": "vcs"
+    }
+  ],
   "require": {
-    "php": "^8.0",
-    "ext-igbinary": "*"
+    "php": "^8.4",
+    "ext-igbinary": "*",
+    "ext-curl": "*"
   },
   "require-dev": {
-    "phpstan/phpstan": "2.2.2"
+    "phpstan/phpstan": "2.2.2",
+    "nethergamesmc/pocketmine-mp": "dev-stable"
   },
-  "autoload": {
-    "psr-4": {
-      "libasynCurl\\": "/"
+  "minimum-stability": "dev",
+  "extra": {
+    "virion": {
+      "spec": "3.0",
+      "namespace-root": "libasynCurl"
     }
-  },
-  "minimum-stability": "dev"
+  }
 }
